@@ -1,0 +1,1 @@
+Functions to generate the code of [tupleops'](https://crates.io/crates/tupleops) trait implementations.

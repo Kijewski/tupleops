@@ -1,0 +1,13 @@
+[package]
+name = "tupleops-generator"
+version = "0.1.0"
+edition = "2018"
+authors = ["René Kijewski <rene.[SURNAME]@fu-berlin.de>"]
+license = "ISC OR MIT OR Apache-2.0"
+description = "Functions to generate the code of tupleops' trait implementations"
+homepage = "https://github.com/Kijewski/tupleops"
+repository = "https://github.com/Kijewski/tupleops"
+readme = "README.md"
+
+[lib]
+name = "tupleops_generator"

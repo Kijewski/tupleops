@@ -1,0 +1,71 @@
+[package]
+name = "tupleops"
+version = "0.1.0"
+edition = "2018"
+authors = ["René Kijewski <rene.[SURNAME]@fu-berlin.de>"]
+license = "ISC OR MIT OR Apache-2.0"
+description = "Utility library to work with tuples"
+homepage = "https://github.com/Kijewski/tupleops"
+repository = "https://github.com/Kijewski/tupleops"
+categories = ["rust-patterns"]
+keywords = ["no-std"]
+readme = "README.md"
+
+[lib]
+name = "tupleops"
+
+[dependencies]
+tupleops-macros = { version = "0.1.0", path = "../tupleops-macros" }
+
+[dev-dependencies]
+same-types = { version = "0.1.0", path = "../same-types" }
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[features]
+default = ["default-ops", "default-len"]
+full = ["all-ops", "max-len"]
+default-len = ["16"]
+max-len = ["256"]
+all-ops = ["default-ops", "gat-ops"]
+
+default-ops = [
+    "all-ok", "all-some", "append", "apply", "apply-mut", "concat", "concat-many", "length",
+    "option", "prepend", "ref", "ref-mut", "tuple", "unappend", "unprepend",
+]
+gat-ops = ["map"]
+
+all-ok = []
+all-some = []
+append = []
+apply-mut = []
+apply = []
+concat-many = ["concat"]
+concat = ["prepend"]
+into = []
+length = []
+map = ["feature-generic_associated_types"]
+option = []
+prepend = []
+ref-mut = []
+ref = []
+tuple = []
+unappend = []
+unprepend = []
+
+8 = []
+16 = ["8"]
+32 = ["16"]
+64 = ["32"]
+96 = ["64"]
+128 = ["96"]
+160 = ["128"]
+192 = ["160"]
+224 = ["192"]
+256 = ["224"]
+dont_hurt_yourself_by_using_all_features = []
+
+feature-const_fn_trait_bound = []
+feature-generic_associated_types = []

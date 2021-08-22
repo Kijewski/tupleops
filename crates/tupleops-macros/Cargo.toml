@@ -1,0 +1,18 @@
+[package]
+name = "tupleops-macros"
+version = "0.1.0"
+edition = "2018"
+authors = ["René Kijewski <rene.[SURNAME]@fu-berlin.de>"]
+license = "ISC OR MIT OR Apache-2.0"
+description = "Procedural macros needed to implement tupleops"
+homepage = "https://github.com/Kijewski/tupleops"
+repository = "https://github.com/Kijewski/tupleops"
+readme = "README.md"
+
+[lib]
+name = "tupleops_macros"
+proc-macro = true
+
+[dependencies]
+syn = { version = "1", features = ["full", "parsing"] }
+tupleops-generator = { version = "0.1.0", path = "../tupleops-generator" }
