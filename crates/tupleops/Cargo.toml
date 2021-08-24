@@ -1,6 +1,6 @@
 [package]
 name = "tupleops"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2018"
 authors = ["René Kijewski <rene.[SURNAME]@fu-berlin.de>"]
 license = "ISC OR MIT OR Apache-2.0"
@@ -18,7 +18,7 @@ name = "tupleops"
 tupleops-macros = { version = "0.1.0", path = "../tupleops-macros" }
 
 [dev-dependencies]
-same-types = { version = "0.1.0", path = "../same-types" }
+same-types = { version = "0.1.1", path = "../same-types" }
 
 [package.metadata.docs.rs]
 all-features = true

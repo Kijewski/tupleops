@@ -1,6 +1,6 @@
 [package]
 name = "same-types"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2018"
 authors = ["René Kijewski <rene.[SURNAME]@fu-berlin.de>"]
 license = "ISC OR MIT OR Apache-2.0"
@@ -8,7 +8,7 @@ description = "Ensure that two types are the same."
 homepage = "https://github.com/Kijewski/tupleops"
 repository = "https://github.com/Kijewski/tupleops"
 categories = ["rust-patterns"]
-keywords = ["no-std"]
+keywords = ["no-std", "tuple"]
 readme = "README.md"
 
 [lib]

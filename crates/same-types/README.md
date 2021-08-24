@@ -1,12 +1,12 @@
 Ensure that two types are the same, or fail with a compilation error.
 
-```
+```rust
 use same_types::assert_same_types;
 
 assert_same_types!(u32, u32, u32, u32);
 ```
 
-```compile_fail
+```rust
 use same_types::assert_same_types;
 
 // Fails with the message:
