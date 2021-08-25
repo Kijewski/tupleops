@@ -221,6 +221,7 @@ mod tpl_ref_mut;
 mod tpl_tuple;
 mod tpl_unappend;
 mod tpl_unprepend;
+mod tpl_unprepend_template;
 
 pub use tpl_all_ok::*;
 pub use tpl_all_some::*;
@@ -237,6 +238,7 @@ pub use tpl_ref_mut::*;
 pub use tpl_tuple::*;
 pub use tpl_unappend::*;
 pub use tpl_unprepend::*;
+pub use tpl_unprepend_template::*;
 
 #[doc(hidden)]
 #[macro_export]

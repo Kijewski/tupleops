@@ -33,7 +33,7 @@ all-ops = ["default-ops", "gat-ops"]
 
 default-ops = [
     "all-ok", "all-some", "append", "apply", "apply-mut", "concat", "concat-many", "length",
-    "option", "prepend", "ref", "ref-mut", "tuple", "unappend", "unprepend",
+    "option", "prepend", "ref", "ref-mut", "tuple", "unappend", "unprepend", "unprepend-template",
 ]
 gat-ops = ["map"]
 
@@ -51,6 +51,7 @@ option = []
 prepend = []
 ref-mut = []
 ref = []
+unprepend-template = ["unprepend", "append"]
 tuple = []
 unappend = []
 unprepend = []
